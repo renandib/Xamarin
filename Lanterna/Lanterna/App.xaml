@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lanterna.App">
+    <!-- AQUI VAMOS FAZERUM STYLE FORA DA APLICACAO > MAIN PAGE > NA OUTRA VEZ FEZ POR LA -->
+    <!-- LEMBRANDO Q EU PEGUEI AS FONTES DA PROF E COLOQUEI NESSA PASTA AQUI > C:\Users\Renan\source\repos\Lanterna\Lanterna\Assets-->
+    
+    <Application.Resources>
+        
+            
+            <!-- CRIANDO CONFIGURACAO PRA FONT > LEMBRANDO Q TIVE Q ADD DUAS FONTES NOVAS NA PASTA DO CAMINHO ACIMA 
+            <Style x:Key="fontepersonalizada" TargetType="Label">
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        
+        OBS PUXEI DO SITE > O DA PROF TA DIFERENTE > https://docs.microsoft.com/pt-br/xamarin/xamarin-forms/platform/device
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Exo2-Bold.ttf#Exo2-Bold"/>
+                            <On Platform="iOS" Value="Exo2-Bold.ttf"/>
+                        </OnPlatform>
+                    </Setter.Value>
+                    
+         O DA PROF TA ASSIM : 
+                <OnPlatform x:TypeArguments = "x:String"
+                    Android: ""Exo2-Bold.ttf#Exo2-Bold"
+                    IOS: "Exo2-Bold.ttf"/> 
+                </Setter>
+
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="TextColor" Value="White"/>
+
+            </Style>
+
+            
+        CRIANDO CONFIGURACAO PRO TITULO e trazendo dados da fontepersonalizada acima com o > "BaseResourcekey" 
+        
+        <Style x:Key="titulo" TargetType="Label" BaseResourceKey="fontepersonalizada">
+                <Setter Property="FontSize" Value="60"/>
+
+            </Style>
+
+            
+        CRIANDO UM SUBTITULO TBM A PARTIR DO EXEMPLO DE CIMA 
+            <Style x:Key="subtitulo" TargetType="Label" BaseResourceKey="fontepersonalizada">
+                <Setter Property="FontSize" Value="30"/>
+
+            </Style>
+
+            
+         CRIANDO UM TEXTO AGORA COMUM > SEGUINDO O PADRAO ACIMA 
+        
+        <Style x:Key="texto" TargetType="Label" >
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="Medium"/>
+
+            </Style>
+
+            
+         CRIANDO MAIS UM TEXTO COMO O DE CIMA 
+           
+        <Style x:Key="textooutracor" TargetType="Label" BaseResourceKey="texto">
+                <Setter Property="TextColor" Value="Pink"/>
+
+            </Style>
+
+             CRIANDO MAIS UM 3 TEXTO DE OUTRA COR COM BASE NO DE CIMA 
+            
+        <Style x:Key="textomaisumacor" TargetType="Label" BaseResourceKey="texto">
+                <Setter Property="TextColor" Value="Orange"/>
+
+            </Style>
+
+
+        </ResourceDictionary>
+        
+    </Application.Resources>
+
+    
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+           DEFININDO O N° DE LINHAS AGORA 
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" 
+               x:Name="titulo"
+               HorizontalOptions="End"
+               VerticalOptions="End"/>
+
+        </Grid>
+
+
+    </ContentPage.Content>
+-->
+       
+
+    </Application.Resources>
+</Application>

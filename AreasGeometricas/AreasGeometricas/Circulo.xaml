@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AreasGeometricas.Circulo"
+             Title="Circulo">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Aquamarine">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Frame Grid.Row="0"
+                       CornerRadius="10"
+                       BackgroundColor="#ccc"
+                       Margin="10,100,10,10">
+
+                <StackLayout>
+                    <Entry x:Name="txt_raio"
+                           Keyboard="Numeric"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           Margin="20"
+                           MaxLength="8"
+                           Placeholder="Valor do raio do circulo "
+                           PlaceholderColor="White"/>
+
+                    <Button Grid.Row="1"
+                       Margin="10,20,10,20"
+                       Text="Calcular"
+                       Style="{StaticResource ButtonCalc}"
+                       Clicked="Button_calcular"/>
+
+                    <Label Grid.Row="2"
+                           Margin="10,20,10,20"
+                           x:Name="resultado"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Red"
+                           FontAttributes="Bold"/>
+                </StackLayout>
+
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

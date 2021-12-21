@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarinFlix.App">
+    <Application.Resources>
+
+        <ResourceDictionary>
+                        
+            <Style TargetType="ContentPage">
+            <Setter Property="Background" Value="#4B0082" />
+            </Style>
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackground" Value="#4B0082" />
+                <Setter Property="BarTextColor" Value="AliceBlue" />
+            </Style>
+
+            <Style x:Key="Titulo" TargetType="Label" >
+                <Setter Property="TextColor" Value="Red" />
+                <Setter Property="FontSize" Value="40" />
+            
+            </Style>
+
+            <Style x:Key="ButtonVermelhoMenu" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Red"/>
+                <Setter Property="TextColor" Value="Aquamarine" />
+                <Setter Property="MinimumHeightRequest" Value="150" />
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="BorderRadius" Value="50" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="VerticalOptions" Value="Fill" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            
+
+            </Style>
+
+            <Style x:Key="LabelTextoBranco" TargetType="Label" >
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize"  Value="16" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Fill" />
+            
+            </Style>
+
+            <Style x:Key="LabelTextoVermelho" TargetType="Label" >
+                <Setter Property="TextColor"  Value="Red" />
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="ButtonPosters" TargetType="ImageButton">
+                <Setter Property="Aspect" Value="Fill" />
+                <Setter Property="BorderColor" Value="Red" />
+                <Setter Property="BorderWidth" Value="1" />
+                <Setter Property="CornerRadius" Value="10" />
+            
+            </Style>
+
+            <Style x:Key="LogoNaListaDePosters" TargetType="Image" >
+                <Setter Property="HeightRequest" Value="80" />
+            
+            </Style>
+
+            <Style x:Key="LogoNoFilme" TargetType="Image">
+                <Setter Property="HeightRequest" Value="50"/>
+            
+            </Style>
+
+            <Style x:Key="logoInicial" TargetType="Image">
+                <Setter Property="HeightRequest" Value="200" />
+                <Setter Property="Aspect" Value="Fill" />
+            </Style>
+
+            <Style x:Key="textoInicial" TargetType="Label" >
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize"  Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="Padding" Value="15" />
+                <Setter Property="FontAttributes" Value="Bold" />
+
+            </Style>
+
+        </ResourceDictionary>
+
+
+    </Application.Resources>
+</Application>

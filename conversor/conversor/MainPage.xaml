@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="conversor.MainPage">
+
+    <!-- LINK DO VIDEO - https://www.youtube.com/watch?v=VtFSpNpZBIc&list=PLOqx8yEV2-l3SKoRsG3qx983vhvpREC9l&index=2 -->
+    <StackLayout>
+        <!-- SE EU QUISER COLOCAR UM BACKGROUND AQUI TBM PODE-->
+        <Frame BackgroundColor="Red" Padding="24" CornerRadius="0">
+            <Label Text="CONVERSOR DE MOEDAS " HorizontalTextAlignment="Center" TextColor="White" FontSize="36" />
+        </Frame>
+        <!-- FORMATAÇÃO PADRAO Q JA VEM 
+        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        -->
+
+        <!--ESSE "ENTRY" É PRA EU CRIAR O NOME DAS MINHAS VARIAVEIS > Q DPS VAO SER UTILIZADAS COM " C# " -->
+        <!-- X:Name =  NOME DE REFERENCIA DA VARIAVEL -->
+        <!-- Placeholder =  O QUE VAI APARECER DENTRO COMO DICA -->
+        <!-- Keyboard = O TIPO DE DADO QUE SERÁ TRABALHADO NO TECLADO > NO CASO SÓ VAI APARECER NUMERO PRA DIGITAR -->
+
+        <Label Text="Qual é o valor do dolar hoje ?"
+               VerticalOptions="Start"
+               FontSize="22"
+               FontAttributes="Bold"
+               TextColor="SteelBlue"
+               
+               />
+
+        <Entry
+            x:Name = "txt_real"         
+            Placeholder="1 dolar equivale a Quantos reias ? R$"     
+            Keyboard="Numeric"  
+        />
+
+        <Label Text="Informe a quantidade em dolár "
+               VerticalOptions="Start"
+               FontSize="22"
+               FontAttributes="Bold"
+               TextColor="SteelBlue"
+               />
+
+        <Entry
+            x:Name="txt_dolar"
+            Placeholder="U$D"
+            Keyboard="Numeric"
+            />
+
+        <!-- LEMBRANDO Q AQUI EU APENAS FAÇO REFERENCIAS DAS MINHAS VARIAVEIS E FUNCOES > NO CODIGO EU PRECISO FAZER A CHAMADA DPS -->
+
+        <Button Text="Iniciar conversão"
+                FontSize="Large"
+                Clicked="Botao_Conversao"
+                BackgroundColor="Aquamarine"/>
+
+        <!-- CRIANDO A LABEL RESPOSTA -->
+        <Label Text="O valor convertido é : "
+               HorizontalOptions="Center"
+               FontSize="Large"
+               FontAttributes="Bold"
+               />
+        <!-- CRIANDO A VARIAVEL RESPOSTA Q VAI SER EXIBIDA EMBAIXO DA LABEL -->
+        <Label x:Name="txt_valorreais"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               FontAttributes="Bold"
+               TextColor="Red"
+               />
+
+
+    </StackLayout>
+
+</ContentPage>
+
+<!-- MOSTRANDO UM EX DE FORMATAÇÃO ABAIXO > AQUI TEM ALGUNS EX DE FORMATAÇÃO > > https://docs.microsoft.com/pt-br/xamarin/xamarin-forms/user-interface/layouts/layout-options
+    <Label Text = "Qual é o valor do dolar hoje ?
+         VerticalOptions = "Start"
+         HorizontalOptions = "Center" 
+         FontSize = "Large" 
+         FontAtributes = "Bold" = negrito /> 
+    --> 

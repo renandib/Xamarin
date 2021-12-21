@@ -1,0 +1,17 @@
+C:\Users\Renan\source\repos\Lanterna\Lanterna\obj\Debug\netstandard2.0\Lanterna.csproj.AssemblyReference.cache
+C:\Users\Renan\source\repos\Lanterna\Lanterna\obj\Debug\netstandard2.0\Lanterna.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Renan\source\repos\Lanterna\Lanterna\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Renan\source\repos\Lanterna\Lanterna\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Renan\source\repos\Lanterna\Lanterna\obj\Debug\netstandard2.0\Lanterna.AssemblyInfoInputs.cache
+C:\Users\Renan\source\repos\Lanterna\Lanterna\obj\Debug\netstandard2.0\Lanterna.AssemblyInfo.cs
+C:\Users\Renan\source\repos\Lanterna\Lanterna\obj\Debug\netstandard2.0\Lanterna.csproj.CoreCompileInputs.cache
+C:\Users\Renan\source\repos\Lanterna\Lanterna\bin\Debug\netstandard2.0\imagens\botao-desligado.png
+C:\Users\Renan\source\repos\Lanterna\Lanterna\bin\Debug\netstandard2.0\imagens\botao-ligado.png
+C:\Users\Renan\source\repos\Lanterna\Lanterna\bin\Debug\netstandard2.0\Lanterna.deps.json
+C:\Users\Renan\source\repos\Lanterna\Lanterna\bin\Debug\netstandard2.0\Lanterna.dll
+C:\Users\Renan\source\repos\Lanterna\Lanterna\bin\Debug\netstandard2.0\ref\Lanterna.dll
+C:\Users\Renan\source\repos\Lanterna\Lanterna\bin\Debug\netstandard2.0\Lanterna.pdb
+C:\Users\Renan\source\repos\Lanterna\Lanterna\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Renan\source\repos\Lanterna\Lanterna\obj\Debug\netstandard2.0\Lanterna.dll
+C:\Users\Renan\source\repos\Lanterna\Lanterna\obj\Debug\netstandard2.0\ref\Lanterna.dll
+C:\Users\Renan\source\repos\Lanterna\Lanterna\obj\Debug\netstandard2.0\Lanterna.pdb

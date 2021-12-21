@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AreasGeometricas.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <Style TargetType="CarouselPage">
+                <Setter Property="BackgroundColor" Value="MediumAquamarine"/>
+            </Style>
+
+            <Style x:Key="Titulo" TargetType="Label">
+                <Setter Property="TextColor" Value="MediumAquamarine"/>
+                <Setter Property="FontSize" Value="40"/>
+            </Style>
+
+            <Style x:Key="logoInicial" TargetType="Image">
+                <Setter Property="HeightRequest" Value="200" />
+                <Setter Property="Aspect" Value="Fill" />
+            </Style>
+
+            <Style x:Key="ButtonVermelhoMenu" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="MediumAquamarine"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="MinimumHeightRequest" Value="150"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="BorderRadius" Value="50"/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="Fill"/>
+            </Style>
+
+            <Style x:Key="ButtonCalc" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="MediumPurple"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="MinimumHeightRequest" Value="150"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="BorderRadius" Value="50"/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="Fill"/>
+            </Style>
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

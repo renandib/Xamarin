@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarinFlix.MainPage"
+             BackgroundColor="#4B0082">
+        
+
+    <StackLayout>
+        <Image x:Name="logo"
+               Style="{StaticResource logoInicial}"/> 
+
+        <!--<Image Source="minios.gif" IsAnimationPlaying="True"
+               x:Name="logo"
+               Style="{StaticResource logoInicial}"/>
+        -->
+
+        <Label x:Name="textoInicial2"
+               Style="{StaticResource textoInicial}"
+               Text="  **  MINIONS FILMES  **  " />
+
+        <!--<Image x:Name="logo" HeightRequest="200"
+               VerticalOptions="Center" HorizontalOptions="Center"
+               Style=""/>-->
+        <ScrollView>
+
+            <Grid RowSpacing="20"
+                  ColumnSpacing="20"
+                  Padding="20" >
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0"
+                        Text="AÇÃO"
+                        Style="{StaticResource ButtonVermelhoMenu}"
+                        Clicked="Button_Clicked" />
+
+                <Button Grid.Row="0" Grid.Column="1" 
+                        Text="FICÇÃO"
+                        Style="{StaticResource ButtonVermelhoMenu}" />
+
+                <Button Grid.Row="1" Grid.Column="0"
+                        Text="ANIME"
+                        Style="{StaticResource ButtonVermelhoMenu}" />
+
+                <Button Grid.Row="1" Grid.Column="1"
+                        Text="GUERRA"
+                        Style="{StaticResource ButtonVermelhoMenu}" />
+
+
+                <Button Grid.Row="2" Grid.Column="0"
+                        Text="AVENTURA"
+                        Style="{StaticResource ButtonVermelhoMenu}" />
+
+                <Button Grid.Row="2" Grid.Column="1" 
+                        Text="NACIONAL"
+                        Style="{StaticResource ButtonVermelhoMenu}" />
+
+                <Button Grid.Row="3" Grid.Column="0"
+                        Text="COMEDIA"
+                        Style="{StaticResource ButtonVermelhoMenu}" 
+                        Clicked="Button_Clicked2"/>
+
+                <Button Grid.Row="3" Grid.Column="1"
+                        Text="SUSPENSE"
+                        Style="{StaticResource ButtonVermelhoMenu}" />
+
+                <Button Grid.Row="4" Grid.Column="0" 
+                        Text="DRAMA" 
+                        Style="{StaticResource ButtonVermelhoMenu}" />
+
+                <Button Grid.Row="4" Grid.Column="1"
+                        Text="TERROR"
+                        Style="{StaticResource ButtonVermelhoMenu}" />
+
+                <Button Grid.Row="5" Grid.Column="0"
+                        Text="DIVERSOS"
+                        Style="{StaticResource ButtonVermelhoMenu}" />
+
+            </Grid>
+
+
+        </ScrollView>
+
+    </StackLayout>
+
+</ContentPage>

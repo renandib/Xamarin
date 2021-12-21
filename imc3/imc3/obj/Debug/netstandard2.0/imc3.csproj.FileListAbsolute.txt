@@ -1,0 +1,15 @@
+C:\Users\Renan\source\repos\imc3\imc3\bin\Debug\netstandard2.0\imc3.deps.json
+C:\Users\Renan\source\repos\imc3\imc3\bin\Debug\netstandard2.0\imc3.dll
+C:\Users\Renan\source\repos\imc3\imc3\bin\Debug\netstandard2.0\ref\imc3.dll
+C:\Users\Renan\source\repos\imc3\imc3\bin\Debug\netstandard2.0\imc3.pdb
+C:\Users\Renan\source\repos\imc3\imc3\obj\Debug\netstandard2.0\imc3.csproj.AssemblyReference.cache
+C:\Users\Renan\source\repos\imc3\imc3\obj\Debug\netstandard2.0\imc3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Renan\source\repos\imc3\imc3\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Renan\source\repos\imc3\imc3\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Renan\source\repos\imc3\imc3\obj\Debug\netstandard2.0\imc3.AssemblyInfoInputs.cache
+C:\Users\Renan\source\repos\imc3\imc3\obj\Debug\netstandard2.0\imc3.AssemblyInfo.cs
+C:\Users\Renan\source\repos\imc3\imc3\obj\Debug\netstandard2.0\imc3.csproj.CoreCompileInputs.cache
+C:\Users\Renan\source\repos\imc3\imc3\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Renan\source\repos\imc3\imc3\obj\Debug\netstandard2.0\imc3.dll
+C:\Users\Renan\source\repos\imc3\imc3\obj\Debug\netstandard2.0\ref\imc3.dll
+C:\Users\Renan\source\repos\imc3\imc3\obj\Debug\netstandard2.0\imc3.pdb

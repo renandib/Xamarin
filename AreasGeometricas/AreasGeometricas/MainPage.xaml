@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AreasGeometricas.MainPage"
+             BackgroundColor="MediumAquamarine">
+
+    <!-- LINK DO YOUTUBE -  https://www.youtube.com/watch?v=csuuN1LMUXM&list=PLOqx8yEV2-l3SKoRsG3qx983vhvpREC9l&index=7&t=77s -->
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <Grid BackgroundColor="MediumPurple">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Frame Grid.Row="0"
+                       CornerRadius="10"
+                       Margin="10,30,10,0" 
+                       BackgroundColor="LightGreen">
+
+                    <StackLayout>
+
+                        <Image Source="logo" Aspect="AspectFill"></Image>
+                        
+                        <Label Text="CALCULO DE ÁREAS"
+                               HorizontalTextAlignment="Center"
+                               FontSize="Medium"
+                               TextColor="Red"
+                               Padding="5">
+                        </Label>
+                    </StackLayout>
+                </Frame>
+
+                <Frame CornerRadius="10"
+                       BackgroundColor="#f3f2f0"
+                       Grid.Row="1"
+                       Margin="10">
+
+                    <StackLayout Spacing="30">
+
+                        <Button Text="HOME"
+                                Style="{StaticResource ButtonVermelhoMenu}"
+                                Clicked="Button_initial"/>
+
+                        <Button Text="Quadrado"
+                                Style="{StaticResource ButtonVermelhoMenu}"
+                                Clicked="Button_quadrado"/>
+
+                        <Button Text="Triangulo"
+                                Style="{StaticResource ButtonVermelhoMenu}"
+                                Clicked="Button_triangulo"/>
+
+                        <Button Text="Circulo"
+                                Style="{StaticResource ButtonVermelhoMenu}"
+                                Clicked="Button_circulo"/>
+
+                        <Button Text="Trapézio"
+                                    Style="{StaticResource ButtonVermelhoMenu}"
+                                    Clicked="Button_trapezio"/>
+
+                        <Button Text="Losango"
+                                    Style="{StaticResource ButtonVermelhoMenu}"
+                                    Clicked="Button_losango"/>
+
+                    </StackLayout>
+
+                </Frame>
+            </Grid>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AreasGeometricas.Inicial"
+             BackgroundColor="Aquamarine"
+             Title="HOME">
+    <ContentPage.Content>
+        
+        <StackLayout>
+                       <!--
+                    <Label x:Name="texto2"
+                           Text="Bem vindo ao CALCULO DE ÁREAS ">
+                        
+                    </Label>
+-->
+                    <Image Source="miniosCapa.jpg" Aspect="AspectFill"></Image> <!-- OBS SÓ FUNCIONA NA PASTA > DRAWABLE -->
+        
+        <!--
+                    <Image x:Name="logo"
+                           Style="{StaticResource logoInicial}"
+                     />
+                    -->
+            <Grid BackgroundColor="MediumSpringGreen">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+        </Grid>
+    <!--
+        <Frame Grid.Row="0"
+                       CornerRadius="10"
+                       BackgroundColor="MediumAquamarine"
+                       Margin="10,100,10,10">
+            </Frame>
+            -->
+            <Label Grid.Row="1"
+                           Margin="10,20,10,0"
+                           Text="BEM VINDO AO PROGRAMA - CALCULO DE ÁREAS !"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Red"
+                           FontAttributes="Bold"
+                   FontSize="35"
+                   />
+                     <!--
+                    <Label Margin="10,0,10,0"
+                           Text="Ao Aplicativo de Cálculo de Formas Geometricas"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black"
+                           FontAttributes="Bold"/>
+
+                    <Label Margin="10,0,10,20"
+                           Text="Faça cálculo das formas que você precisar"
+                           HorizontalTextAlignment="Center"
+                           TextColor="Black"
+                           FontAttributes="Bold"/>
+                        -->
+       
+             
+                </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

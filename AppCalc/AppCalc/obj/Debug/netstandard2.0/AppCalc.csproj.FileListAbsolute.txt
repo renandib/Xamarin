@@ -1,0 +1,15 @@
+C:\Users\Renan\source\repos\AppCalc\AppCalc\obj\Debug\netstandard2.0\AppCalc.csproj.AssemblyReference.cache
+C:\Users\Renan\source\repos\AppCalc\AppCalc\obj\Debug\netstandard2.0\AppCalc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Renan\source\repos\AppCalc\AppCalc\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Renan\source\repos\AppCalc\AppCalc\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Renan\source\repos\AppCalc\AppCalc\obj\Debug\netstandard2.0\AppCalc.AssemblyInfoInputs.cache
+C:\Users\Renan\source\repos\AppCalc\AppCalc\obj\Debug\netstandard2.0\AppCalc.AssemblyInfo.cs
+C:\Users\Renan\source\repos\AppCalc\AppCalc\obj\Debug\netstandard2.0\AppCalc.csproj.CoreCompileInputs.cache
+C:\Users\Renan\source\repos\AppCalc\AppCalc\obj\Debug\netstandard2.0\AppCalc.dll
+C:\Users\Renan\source\repos\AppCalc\AppCalc\obj\Debug\netstandard2.0\ref\AppCalc.dll
+C:\Users\Renan\source\repos\AppCalc\AppCalc\obj\Debug\netstandard2.0\AppCalc.pdb
+C:\Users\Renan\source\repos\AppCalc\AppCalc\bin\Debug\netstandard2.0\AppCalc.deps.json
+C:\Users\Renan\source\repos\AppCalc\AppCalc\bin\Debug\netstandard2.0\AppCalc.dll
+C:\Users\Renan\source\repos\AppCalc\AppCalc\bin\Debug\netstandard2.0\ref\AppCalc.dll
+C:\Users\Renan\source\repos\AppCalc\AppCalc\bin\Debug\netstandard2.0\AppCalc.pdb
+C:\Users\Renan\source\repos\AppCalc\AppCalc\obj\Debug\netstandard2.0\XamlC.stamp

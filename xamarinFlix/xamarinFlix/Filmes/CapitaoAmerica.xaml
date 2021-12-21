@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarinFlix.Filmes.CapitaoAmerica"
+             Title="Capitão América"
+             BackgroundColor="#4B0082">
+    
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+
+            <!--<Image x:Name="logo" Style="{StaticResource LogoNaListaDePosters}" /> -->
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="400" />
+                    <ColumnDefinition Width="*" />
+                    
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <WebView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+                         x:Name="visualizador"
+                         VerticalOptions="Fill"
+                         BackgroundColor="#4B0082" />
+
+                <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" >
+                    <ScrollView>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Image x:Name="poster" Grid.Row="0" Grid.Column="0" Aspect="AspectFill" />
+
+                            <StackLayout Grid.Row="0" Grid.Column="1" VerticalOptions="StartAndExpand">
+                                <Label Text="TÍTULO "  Style="{StaticResource LabelTextoVermelho}" />
+                                <Label Text="Capitão América " Style="{StaticResource LabelTextoBranco}" />
+                                <Label Text="LANÇAMENTO " Style="{StaticResource LabelTextoVermelho}" />
+                                <Label Text="19 de julho de 2011  " Style="{StaticResource LabelTextoBranco}" />
+                                <Label Text="DIREÇÃO  " Style="{StaticResource LabelTextoVermelho}" />
+                                <Label Text="Joe Johnston " Style="{StaticResource LabelTextoBranco}" />
+                                <Label Text="SINOPSE " Style="{StaticResource LabelTextoVermelho}" />
+                                <Label x:Name ="sinopse" Style="{StaticResource LabelTextoBranco}" />
+                             
+
+                            </StackLayout>
+
+                           <!-- <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="FillAndExpand">
+                                <Label Text="SINOPSE" Style="{StaticResource LabelTextoVermelho}" />
+                                <Label x:Name ="sinopse" Style="{StaticResource LabelTextoBranco}" />
+
+                            </StackLayout>
+                            -->
+                        </Grid>
+                        
+                    </ScrollView>
+                </StackLayout>
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

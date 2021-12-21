@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="App lanterna etec"
+             BackgroundColor="#232323"
+             x:Class="Lanterna.MainPage">
+
+    <!--CRIANDO PROJETO DA LANTER > https://etecspgov.sharepoint.com/sites/Section_3264.A.-.N.402.241.20212/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FSection%5F3264%2EA%2E%2D%2EN%2E402%2E241%2E20212%2FShared%20Documents%2FGeneral%2FRecordings%2FReuni%C3%A3o%20em%20%5FGeneral%5F%2D20210826%5F212400%2DGrava%C3%A7%C3%A3o%20de%20Reuni%C3%A3o%2Emp4&parent=%2Fsites%2FSection%5F3264%2EA%2E%2D%2EN%2E402%2E241%2E20212%2FShared%20Documents%2FGeneral%2FRecordings
+    1° PASSO > VOU NO PROJETO "LANTERNA" COM BOTAO DIREITO E CRIO UMA PASTA CHAMADA >"IMAGENS" > JOGA AS IMAGENS Q A PROF DISPONIBILIZOU NA AULA > 26/08
+    2° > dps eu clico na pasta "imagens" > vou em ADD > E PEGO AS IMAGENS Q A PROF DEIXOU > DPS SELECIONA AS 2 IMG E CLICA EM PROPRIEDADES > "ACAO DE COMPILACAO > RECURSO INSERIDO > COPIAR PARA DIRETORIO >  COPIAR SE FOR MAIS NOVO
+    3° > CLICA NO > "LANTERNA.ANDROID > PROPRIEDADES > ANDROID MANIFEST > LA EMBAIXO > REQUIRED PERMISSION > EU VOU BAIXAR AS PERMISSÕES Q VAI ACESSAR A LANTERNA DO MEU CEL E MAIS OUTRAS PERMISSOES > "BATTERY_STATS" , "CAMERA" , "FLASHLIGTH" , "VIBRATE" > SÓ DA CTRL+S E FECHAR Q TA SALVO
+    4° > vai em ferramentas > gerenciador de pacotes do nugget / gerenciar pacotes nuggets.. / atualizar e baixar o > "xamarian essentials" / "xam.plugin.battery"
+    5° > ALGUMAS COISAS EU TO FAZENDO NO "APP.XAML" > DPS DAR UMA OLHADA LA PRA ENTENDER TBM 
+    6° > DPS Q EU FIZ TODO O ESTILO NO "APP.XAML" > AGORA PRECISO FAZER AS CHAMDAS NO "MAING pAGE.XAML.CS MONTAR GRIDS E CHAMAR O NOME DAS MINHAS LABELS > IGUAL EU FIZ NO APP DA CALCULADORA 
+    7° > A PROF MANDOU UMA FOTO DIZENDO COMO QUER O FRONT > A IDEIA É FAZER O MESMO Q NA CALCULADORA > USANDO GRID E FAZENDO AS CHAMADAS DAS LABEL Q EU CRIEI NO "STYLE" > "APP.XAML"
+    -->
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- CRIANDO CONFIGURACAO PRA FONT > LEMBRANDO Q TIVE Q ADD DUAS FONTES NOVAS NA PASTA DO CAMINHO ACIMA -->
+            <Style x:Key="fontepersonalizada" TargetType="Label">
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <!-- OBS PUXEI DO SITE > O DA PROF TA DIFERENTE > https://docs.microsoft.com/pt-br/xamarin/xamarin-forms/platform/device-->
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="Android" Value="Exo2-Bold.ttf"/>
+                            <!--Value="Exo2-Bold.ttf#Exo2-Bold"/>-->
+                            <On Platform="iOS" Value="Exo2-Bold.ttf"/>
+                        </OnPlatform>
+                    </Setter.Value>
+                    <!-- O DA PROF TA ASSIM : 
+                <OnPlatform x:TypeArguments = "x:String"
+                    Android: ""Exo2-Bold.ttf#Exo2-Bold"
+                    IOS: "Exo2-Bold.ttf"/> -->
+                </Setter>
+
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="TextColor" Value="White"/>
+
+            </Style>
+
+            <!-- CRIANDO CONFIGURACAO PRO TITULO e trazendo dados da fontepersonalizada acima com o > "BaseResourcekey"-->
+            <Style x:Key="titulo" TargetType="Label" BasedOn="{StaticResource fontepersonalizada}">
+                <!--BaseResourceKey="fontepersonalizada" prof >-->
+                <Setter Property="FontSize" Value="60"/>
+
+            </Style>
+
+            <!--CRIANDO UM SUBTITULO TBM A PARTIR DO EXEMPLO DE CIMA -->
+            <Style x:Key="subtitulo" TargetType="Label" BasedOn="{StaticResource fontepersonalizada}">
+                <Setter Property="FontSize" Value="30"/>
+
+            </Style>
+
+            <!-- CRIANDO UM TEXTO AGORA COMUM > SEGUINDO O PADRAO ACIMA -->
+            <Style x:Key="texto" TargetType="Label" >
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="FontSize" Value="Medium"/>
+
+            </Style>
+
+            <!-- CRIANDO MAIS UM TEXTO COMO O DE CIMA -->
+            <Style x:Key="textooutracor" TargetType="Label" BasedOn="{StaticResource texto}">
+                <Setter Property="TextColor" Value="Pink"/>
+
+            </Style>
+
+            <!-- CRIANDO MAIS UM 3 TEXTO DE OUTRA COR COM BASE NO DE CIMA -->
+            <Style x:Key="textomaisumacor" TargetType="Label" BasedOn="{StaticResource texto}">
+                <Setter Property="TextColor" Value="Orange"/>
+
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                    Text="LANTERNA"
+                    Style="{StaticResource titulo}"/>
+            
+            <ImageButton Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                         
+                          x:Name="btnOnOff"
+                          MinimumHeightRequest="360"
+                          MinimumWidthRequest="821"
+                          VerticalOptions="Start"
+                          HorizontalOptions="Center"
+                          Aspect="AspectFill"
+                          BackgroundColor="#232323"
+                          Clicked="BtnOnOff_Clicked"/>
+            <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+                   HorizontalOptions="Center"
+                   Text="SITUAÇÃO DA BATERIA"
+                   Style="{StaticResource subtitulo}"/>
+            <Label Grid.Row="3" Grid.Column="0" Text="Carga Restante" Style="{StaticResource textomaisumacor}"/>
+            <Label Grid.Row="4" Grid.Column="0" Text="Status da Bateria" Style="{StaticResource textooutracor}"/>
+            <Label Grid.Row="5" Grid.Column="0" Text="Fonte de Energia" Style="{StaticResource textooutracor}"/>
+            <Label Grid.Row="3" Grid.Column="1" x:Name="lbl_porcentagem_restante" Style="{StaticResource textooutracor}"/>
+            <Label Grid.Row="4" Grid.Column="1" x:Name="lbl_status" Style="{StaticResource textooutracor}"/>
+            <Label Grid.Row="5" Grid.Column="1" x:Name="lbl_fonte_carregamento" Style="{StaticResource textomaisumacor}"/>
+            <Label Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" x:Name="lbl_bateria_fraca"
+                   Style="{StaticResource textomaisumacor}"
+                    FontAttributes="Italic"
+                    HorizontalTextAlignment="Center"
+                    TextColor="Red"/>
+        </Grid>
+
+
+    </ContentPage.Content>
+    
+    <!--
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+-->
+    
+</ContentPage>
+
+<!--
+    AGORA VOU CRIAR AS GRID AQUI EMBAIXO PRO FORMATO Q A PROF QUER NA TELA  
+ <Grid>
+    
+    ISSO FOI O QUE EU TENTEI FAZER ABAIXO
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=/>
+            Grid.ColumnDefinitions 
+    
+    DEFININDO O N° DE LINHAS AGORA 
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+          
+   
+             CRIANDO AGORA O CONTEUDO DAS TABELAS
+            <Label Grid.Row="0" Grid.Column="0" 
+                   Style="{StaticResource titulo}"
+                   x:Name="titulo1"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Text="Lanterna"/>
+
+            <Label Grid.Row="1" Grid.Column="0" 
+                   Style="{StaticResource subtitulo}"
+                   x:Name="subtitulo1"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Text="situação da bateria"/>
+
+            
+            <Label Grid.Row="2" Grid.Column="0"
+                   Style="{StaticResource textooutracor}"
+                   x:Name="titulo2"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Text="carga restante"/>
+
+            <Label Grid.Row="3" Grid.Column="0"
+                   Style="{StaticResource textomaisumacor}"
+                   x:Name="titulo3"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Text="Atenção a bateria esta fraca !"/>
+
+            <ImageButton Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
+                  x:Name="botaodesligado"
+                  MinimumHeightRequest="360"
+                  MinimumWidthRequest="821"
+                  VerticalOptions="Start"
+                  HorizontalOptions="Center"
+                  Aspect="Fill"
+                  Clicked="botaodesligado_Clicked"/>
+             Clicked="btn_off"
+            
+            
+
+
+        </Grid>
+
+    -->

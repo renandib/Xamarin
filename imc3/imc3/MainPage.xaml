@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    <!-- 2° APP DE XAMARIN - IMC > TIRANDO ALGUMAS COISAS DO PRIMEIRO COMO BASE -->
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="imc3.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Red" Padding="24" CornerRadius="0">
+            <Label Text="CALCULO DO IMC " HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Detalhes do IMC ao preencher os dados abaixo " FontSize="Title"  TextColor="Purple" FontAttributes="Bold"/>
+
+        <Label Text="Por favor, informe seu peso em Kg: " FontSize="22"  TextColor="SteelBlue" FontAttributes="Bold"/>
+        
+        <Entry x:Name="txt_peso"
+               Placeholder="Peso em Kg: Ex > 58.50"
+               Keyboard="Numeric"
+               />
+
+        <Label Text="Por favor , informe o valor da sua altura em [M] " FontSize="22"  TextColor="SteelBlue" FontAttributes="Bold"/>
+
+        <Entry x:Name="txt_altura"
+               Placeholder="Altura em M: Ex > 1.75 "
+               Keyboard="Numeric"
+               />
+
+        <Button Text="Calcular IMC"
+                FontSize="Large"
+                Clicked="botao_Calcular"
+                BackgroundColor="Aquamarine"
+                TextColor="Black"
+                FontAttributes="Bold"
+                />
+
+        <Label x:Name="resposta"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               FontAttributes="Bold"
+               TextColor="Red"
+               />
+        
+
+    </StackLayout>
+
+</ContentPage>
